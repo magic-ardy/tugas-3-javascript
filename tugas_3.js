@@ -135,18 +135,37 @@ for(let i = 1; i <= n; i++){
 
 // #2
 let nilaiAwal = 0
-for(nilaiAwal; i <20; nilaiAwal+=2){
+for(nilaiAwal; nilaiAwal < 20; nilaiAwal+=2){
     console.log(nilaiAwal)
 }
 
 // #3
 let nilai = 0
 for(nilai; nilai <= 20; nilai++){
-    if(nilai / 2 == 0){
-        console.log("genap")
-    } else if(nilai / 2 != 0){
-        console.log("ganjil");
+    if(nilai % 2 == 0){
+        console.log("bilangan genap")
+    } else if(nilai % 2 != 0){
+        console.log("bilangan ganjil");
     }
 }
 
 // #4
+
+let validasi = confirm('Apakah Anda mau mengulang? ')
+let hitung = count(validasi == true)
+while(hitung >= 1 ) {
+    console.log(hitung);
+    hitung++
+}
+
+// #5
+5. Buat sebuah program kuis.
+Tampilkan prompt() untuk meminta inputan dari user. Tampilan teks ‘Sebutkan kepanjangan dari nama IB (Impact Byte)?’
+Lakukan pengecekan apakah jawaban dari user sudah benar
+Jika benar, tampilkan alert ‘Selamat jawaban kamu benar’
+Jika salah, lakukan pengulangan untuk menampilkan prompt() yg sama hingga jawaban dari user benar
+	
+Variable isinya prompt
+While
+Prompt
+Misal bener, break
