@@ -114,10 +114,10 @@ switch(gerak) {
         console.log('Karakter berjalan ke atas')
         break;
     case 'Down':
-        console.log('Karakter berjalan ke Bawah');
+        console.log('Karakter berjalan ke bawah');
         break;
     case 'Right':
-        console.log('Karakter berjalan ke Kanan');
+        console.log('Karakter berjalan ke kanan');
         break;
     case 'Left':
         console.log('Karakter berjalan ke kiri');
@@ -130,7 +130,8 @@ switch(gerak) {
 
 let n = 100
 for(let i = 1; i <= n; i++){
-    console.log("user ke- " + i);
+    document.write('<br/>')
+    document.write('user ke- ', + i);
 }
 
 // #2
@@ -151,12 +152,15 @@ for(nilai; nilai <= 20; nilai++){
 
 // #4
 
-let validasi = confirm('Apakah Anda mau mengulang? ')
-let hitung = count(validasi == true)
-while(hitung >= 1 ) {
-    console.log(hitung);
-    hitung++
-}
+let validasi = confirm('Apakah Anda mau mengulang?')
+let count = 0
+while(validasi == true ) {
+    validasi = confirm('Apakah Anda mau mengulang?')
+    if(validasi == true) {
+        count++
+    } else if{
+        alert('pengulangan sudah dilakukan sebanyak' + count)
+    }
 
 // #5
 5. Buat sebuah program kuis.
@@ -169,3 +173,13 @@ Variable isinya prompt
 While
 Prompt
 Misal bener, break
+
+let pengecekan = prompt('Sebutkan kepanjangan dari nama IB?')
+while(pengecekan != 'Impact Byte') {
+    pengecekan
+    break;
+}
+if(pengecekan == 'Impact Byte') {
+        alert('Selamat, jawaban kamu benar')
+        break;
+    }
